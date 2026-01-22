@@ -1,0 +1,392 @@
+% Checking upload ... % Checker ran ... % No errors ...
+% START OF SYSTEM OUTPUT
+Running first-order theorem proving
+Running: /home/tptp/Systems/Vampire---5.0/vampire --mode casc -m 16384 --cores 7 -t 60 /tmp/XqAKAr29t2/SOT_Cqpz2y
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200751)fmb+10_1_sil=16000:sas=cadical:random_seed=2101226724:i=102_1 on SOT_Cqpz2y for (1ds/102Mi)
+% (3200746)ott+11_2:1_plsq=on:prc=on:plsqc=2:plsqr=16065853,524288:spb=goal:lsd=10:bsr=on:sac=on:random_seed=3352965998:s2a=on:prac=on:i=250008:s2at=2:add=on:doe=on:bs=unit_only:bd=all:nm=4:aer=on:uhcvi=off:gsp=on:rawr=on_600 on SOT_Cqpz2y for (600ds/250008Mi)
+% (3200744)lrs+1_1024_to=lpo:sp=weighted_frequency:abs=on:random_seed=789863683:amm=off_600 on SOT_Cqpz2y for (600ds/0Mi)
+% (3200749)dis+10_1_sil=2000:abs=on:bsr=unit_only:sac=on:avsqc=5:random_seed=619773012:avsq=on:i=109:aac=none:nicw=on_1 on SOT_Cqpz2y for (1ds/109Mi)
+% Detected minimum model sizes of [1]
+% Detected maximum model sizes of [7]
+% TRYING [1]
+% TRYING [2]
+% TRYING [3]
+% TRYING [4]
+% (3200750)lrs+35_1024_to=lpo:sil=64000:random_seed=1218567045:i=235:fsr=off:amm=off_2 on SOT_Cqpz2y for (2ds/235Mi)
+% (3200745)fmb+10_1_sas=cadical:random_seed=817183796:i=150016_600 on SOT_Cqpz2y for (600ds/150016Mi)
+% TRYING [5]
+% (3200744)First to succeed.
+% (3200747)ott+21_1_sil=128000:fs=off:lcm=predicate:random_seed=2153761128:i=102:av=off:fsr=off_1 on SOT_Cqpz2y for (1ds/102Mi)
+% TRYING [6]
+% Detected minimum model sizes of [1]
+% Detected maximum model sizes of [7]
+% TRYING [1]
+% (3200749)Also succeeded, but the first one will report.
+% TRYING [7]
+% (3200746)Also succeeded, but the first one will report.
+% TRYING [2]
+% (3200744)Solution written to "/tmp/tmp.VsvgEmAOn7/vampire-proof-3200739"
+% TRYING [3]
+% (3200750)Also succeeded, but the first one will report.
+% (3200751)Also succeeded, but the first one will report.
+% TRYING [4]
+% TRYING [5]
+% TRYING [6]
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200739)Running in auto input_syntax mode. Trying TPTP
+% (3200744)Refutation found. Thanks to Tanya!
+% SZS status Unsatisfiable for SOT_Cqpz2y
+% SZS output start Proof for SOT_Cqpz2y
+fof(f197,plain,(
+  $false),
+  inference(avatar_sat_refutation,[],[f84,f87,f89,f90,f91,f92,f124,f127,f129,f130,f131,f132,f164,f167,f169,f170,f171,f172,f176,f181,f188,f196])).
+fof(f196,plain,(
+  spl0_4 | spl0_8 | spl0_12),
+  inference(avatar_contradiction_clause,[],[f195])).
+fof(f195,plain,(
+  $false | (spl0_4 | spl0_8 | spl0_12)),
+  inference(subsumption_resolution,[],[f194,f82])).
+fof(f82,plain,(
+  ~color(v2,r) | spl0_4),
+  inference(avatar_component_clause,[],[f80])).
+fof(f80,definition,(
+  spl0_4 <=> color(v2,r)),
+  introduced(definition,[new_symbols(naming,[spl0_4])],[avatar_definition])).
+fof(f194,plain,(
+  color(v2,r) | (spl0_8 | spl0_12)),
+  inference(subsumption_resolution,[],[f193,f122])).
+fof(f122,plain,(
+  ~color(v2,g) | spl0_8),
+  inference(avatar_component_clause,[],[f120])).
+fof(f120,definition,(
+  spl0_8 <=> color(v2,g)),
+  introduced(definition,[new_symbols(naming,[spl0_8])],[avatar_definition])).
+fof(f193,plain,(
+  color(v2,g) | color(v2,r) | spl0_12),
+  inference(resolution,[],[f162,f32])).
+fof(f32,plain,(
+  ( ! [X0] : (color(X0,b) | color(X0,g) | color(X0,r)) )),
+  inference(cnf_transformation,[],[f8])).
+fof(f8,axiom,(
+  ! [X0] : (color(X0,b) | color(X0,g) | color(X0,r))),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f162,plain,(
+  ~color(v2,b) | spl0_12),
+  inference(avatar_component_clause,[],[f160])).
+fof(f160,definition,(
+  spl0_12 <=> color(v2,b)),
+  introduced(definition,[new_symbols(naming,[spl0_12])],[avatar_definition])).
+fof(f188,plain,(
+  spl0_3 | spl0_7 | spl0_11),
+  inference(avatar_contradiction_clause,[],[f187])).
+fof(f187,plain,(
+  $false | (spl0_3 | spl0_7 | spl0_11)),
+  inference(subsumption_resolution,[],[f186,f77])).
+fof(f77,plain,(
+  ~color(v3,r) | spl0_3),
+  inference(avatar_component_clause,[],[f75])).
+fof(f75,definition,(
+  spl0_3 <=> color(v3,r)),
+  introduced(definition,[new_symbols(naming,[spl0_3])],[avatar_definition])).
+fof(f186,plain,(
+  color(v3,r) | (spl0_7 | spl0_11)),
+  inference(subsumption_resolution,[],[f185,f117])).
+fof(f117,plain,(
+  ~color(v3,g) | spl0_7),
+  inference(avatar_component_clause,[],[f115])).
+fof(f115,definition,(
+  spl0_7 <=> color(v3,g)),
+  introduced(definition,[new_symbols(naming,[spl0_7])],[avatar_definition])).
+fof(f185,plain,(
+  color(v3,g) | color(v3,r) | spl0_11),
+  inference(resolution,[],[f157,f32])).
+fof(f157,plain,(
+  ~color(v3,b) | spl0_11),
+  inference(avatar_component_clause,[],[f155])).
+fof(f155,definition,(
+  spl0_11 <=> color(v3,b)),
+  introduced(definition,[new_symbols(naming,[spl0_11])],[avatar_definition])).
+fof(f181,plain,(
+  spl0_2 | spl0_6 | spl0_10),
+  inference(avatar_contradiction_clause,[],[f180])).
+fof(f180,plain,(
+  $false | (spl0_2 | spl0_6 | spl0_10)),
+  inference(subsumption_resolution,[],[f179,f72])).
+fof(f72,plain,(
+  ~color(v1,r) | spl0_2),
+  inference(avatar_component_clause,[],[f70])).
+fof(f70,definition,(
+  spl0_2 <=> color(v1,r)),
+  introduced(definition,[new_symbols(naming,[spl0_2])],[avatar_definition])).
+fof(f179,plain,(
+  color(v1,r) | (spl0_6 | spl0_10)),
+  inference(subsumption_resolution,[],[f178,f112])).
+fof(f112,plain,(
+  ~color(v1,g) | spl0_6),
+  inference(avatar_component_clause,[],[f110])).
+fof(f110,definition,(
+  spl0_6 <=> color(v1,g)),
+  introduced(definition,[new_symbols(naming,[spl0_6])],[avatar_definition])).
+fof(f178,plain,(
+  color(v1,g) | color(v1,r) | spl0_10),
+  inference(resolution,[],[f152,f32])).
+fof(f152,plain,(
+  ~color(v1,b) | spl0_10),
+  inference(avatar_component_clause,[],[f150])).
+fof(f150,definition,(
+  spl0_10 <=> color(v1,b)),
+  introduced(definition,[new_symbols(naming,[spl0_10])],[avatar_definition])).
+fof(f176,plain,(
+  spl0_1 | spl0_5 | spl0_9),
+  inference(avatar_contradiction_clause,[],[f175])).
+fof(f175,plain,(
+  $false | (spl0_1 | spl0_5 | spl0_9)),
+  inference(subsumption_resolution,[],[f174,f68])).
+fof(f68,plain,(
+  ~color(v4,r) | spl0_1),
+  inference(avatar_component_clause,[],[f66])).
+fof(f66,definition,(
+  spl0_1 <=> color(v4,r)),
+  introduced(definition,[new_symbols(naming,[spl0_1])],[avatar_definition])).
+fof(f174,plain,(
+  color(v4,r) | (spl0_5 | spl0_9)),
+  inference(subsumption_resolution,[],[f173,f108])).
+fof(f108,plain,(
+  ~color(v4,g) | spl0_5),
+  inference(avatar_component_clause,[],[f106])).
+fof(f106,definition,(
+  spl0_5 <=> color(v4,g)),
+  introduced(definition,[new_symbols(naming,[spl0_5])],[avatar_definition])).
+fof(f173,plain,(
+  color(v4,g) | color(v4,r) | spl0_9),
+  inference(resolution,[],[f148,f32])).
+fof(f148,plain,(
+  ~color(v4,b) | spl0_9),
+  inference(avatar_component_clause,[],[f146])).
+fof(f146,definition,(
+  spl0_9 <=> color(v4,b)),
+  introduced(definition,[new_symbols(naming,[spl0_9])],[avatar_definition])).
+fof(f172,plain,(
+  ~spl0_11 | ~spl0_12),
+  inference(avatar_split_clause,[],[f133,f160,f155])).
+fof(f133,plain,(
+  ~color(v2,b) | ~color(v3,b)),
+  inference(resolution,[],[f38,f25])).
+fof(f25,plain,(
+  edge(v2,v3)),
+  inference(cnf_transformation,[],[f1])).
+fof(f1,axiom,(
+  edge(v2,v3)),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f38,plain,(
+  ( ! [X0,X1] : (~edge(X0,X1) | ~color(X0,b) | ~color(X1,b)) )),
+  inference(cnf_transformation,[],[f24])).
+fof(f24,plain,(
+  ! [X0,X1] : (~color(X1,b) | ~color(X0,b) | ~edge(X0,X1))),
+  inference(flattening,[],[f23])).
+fof(f23,plain,(
+  ! [X0,X1] : ((~color(X1,b) | ~color(X0,b)) | ~edge(X0,X1))),
+  inference(ennf_transformation,[],[f14])).
+fof(f14,axiom,(
+  ! [X0,X1] : (edge(X0,X1) => ~(color(X1,b) & color(X0,b)))),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f171,plain,(
+  ~spl0_9 | ~spl0_12),
+  inference(avatar_split_clause,[],[f134,f160,f146])).
+fof(f134,plain,(
+  ~color(v2,b) | ~color(v4,b)),
+  inference(resolution,[],[f38,f41])).
+fof(f41,plain,(
+  edge(v2,v4)),
+  inference(resolution,[],[f31,f27])).
+fof(f27,plain,(
+  edge(v4,v2)),
+  inference(cnf_transformation,[],[f3])).
+fof(f3,axiom,(
+  edge(v4,v2)),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f31,plain,(
+  ( ! [X0,X1] : (~edge(X0,X1) | edge(X1,X0)) )),
+  inference(cnf_transformation,[],[f15])).
+fof(f15,plain,(
+  ! [X0,X1] : (edge(X1,X0) | ~edge(X0,X1))),
+  inference(ennf_transformation,[],[f7])).
+fof(f7,axiom,(
+  ! [X0,X1] : (edge(X0,X1) => edge(X1,X0))),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f170,plain,(
+  ~spl0_10 | ~spl0_12),
+  inference(avatar_split_clause,[],[f135,f160,f150])).
+fof(f135,plain,(
+  ~color(v2,b) | ~color(v1,b)),
+  inference(resolution,[],[f38,f42])).
+fof(f42,plain,(
+  edge(v2,v1)),
+  inference(resolution,[],[f31,f28])).
+fof(f28,plain,(
+  edge(v1,v2)),
+  inference(cnf_transformation,[],[f4])).
+fof(f4,axiom,(
+  edge(v1,v2)),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f169,plain,(
+  ~spl0_9 | ~spl0_11),
+  inference(avatar_split_clause,[],[f136,f155,f146])).
+fof(f136,plain,(
+  ~color(v3,b) | ~color(v4,b)),
+  inference(resolution,[],[f38,f26])).
+fof(f26,plain,(
+  edge(v3,v4)),
+  inference(cnf_transformation,[],[f2])).
+fof(f2,axiom,(
+  edge(v3,v4)),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f167,plain,(
+  ~spl0_10 | ~spl0_11),
+  inference(avatar_split_clause,[],[f138,f155,f150])).
+fof(f138,plain,(
+  ~color(v3,b) | ~color(v1,b)),
+  inference(resolution,[],[f38,f43])).
+fof(f43,plain,(
+  edge(v3,v1)),
+  inference(resolution,[],[f31,f29])).
+fof(f29,plain,(
+  edge(v1,v3)),
+  inference(cnf_transformation,[],[f5])).
+fof(f5,axiom,(
+  edge(v1,v3)),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f164,plain,(
+  ~spl0_10 | ~spl0_9),
+  inference(avatar_split_clause,[],[f141,f146,f150])).
+fof(f141,plain,(
+  ~color(v4,b) | ~color(v1,b)),
+  inference(resolution,[],[f38,f44])).
+fof(f44,plain,(
+  edge(v4,v1)),
+  inference(resolution,[],[f31,f30])).
+fof(f30,plain,(
+  edge(v1,v4)),
+  inference(cnf_transformation,[],[f6])).
+fof(f6,axiom,(
+  edge(v1,v4)),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f132,plain,(
+  ~spl0_7 | ~spl0_8),
+  inference(avatar_split_clause,[],[f93,f120,f115])).
+fof(f93,plain,(
+  ~color(v2,g) | ~color(v3,g)),
+  inference(resolution,[],[f37,f25])).
+fof(f37,plain,(
+  ( ! [X0,X1] : (~edge(X0,X1) | ~color(X0,g) | ~color(X1,g)) )),
+  inference(cnf_transformation,[],[f22])).
+fof(f22,plain,(
+  ! [X0,X1] : (~color(X1,g) | ~color(X0,g) | ~edge(X0,X1))),
+  inference(flattening,[],[f21])).
+fof(f21,plain,(
+  ! [X0,X1] : ((~color(X1,g) | ~color(X0,g)) | ~edge(X0,X1))),
+  inference(ennf_transformation,[],[f13])).
+fof(f13,axiom,(
+  ! [X0,X1] : (edge(X0,X1) => ~(color(X1,g) & color(X0,g)))),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f131,plain,(
+  ~spl0_5 | ~spl0_8),
+  inference(avatar_split_clause,[],[f94,f120,f106])).
+fof(f94,plain,(
+  ~color(v2,g) | ~color(v4,g)),
+  inference(resolution,[],[f37,f41])).
+fof(f130,plain,(
+  ~spl0_6 | ~spl0_8),
+  inference(avatar_split_clause,[],[f95,f120,f110])).
+fof(f95,plain,(
+  ~color(v2,g) | ~color(v1,g)),
+  inference(resolution,[],[f37,f42])).
+fof(f129,plain,(
+  ~spl0_5 | ~spl0_7),
+  inference(avatar_split_clause,[],[f96,f115,f106])).
+fof(f96,plain,(
+  ~color(v3,g) | ~color(v4,g)),
+  inference(resolution,[],[f37,f26])).
+fof(f127,plain,(
+  ~spl0_6 | ~spl0_7),
+  inference(avatar_split_clause,[],[f98,f115,f110])).
+fof(f98,plain,(
+  ~color(v3,g) | ~color(v1,g)),
+  inference(resolution,[],[f37,f43])).
+fof(f124,plain,(
+  ~spl0_6 | ~spl0_5),
+  inference(avatar_split_clause,[],[f101,f106,f110])).
+fof(f101,plain,(
+  ~color(v4,g) | ~color(v1,g)),
+  inference(resolution,[],[f37,f44])).
+fof(f92,plain,(
+  ~spl0_3 | ~spl0_4),
+  inference(avatar_split_clause,[],[f53,f80,f75])).
+fof(f53,plain,(
+  ~color(v2,r) | ~color(v3,r)),
+  inference(resolution,[],[f36,f25])).
+fof(f36,plain,(
+  ( ! [X0,X1] : (~edge(X0,X1) | ~color(X0,r) | ~color(X1,r)) )),
+  inference(cnf_transformation,[],[f20])).
+fof(f20,plain,(
+  ! [X0,X1] : (~color(X1,r) | ~color(X0,r) | ~edge(X0,X1))),
+  inference(flattening,[],[f19])).
+fof(f19,plain,(
+  ! [X0,X1] : ((~color(X1,r) | ~color(X0,r)) | ~edge(X0,X1))),
+  inference(ennf_transformation,[],[f12])).
+fof(f12,axiom,(
+  ! [X0,X1] : (edge(X0,X1) => ~(color(X1,r) & color(X0,r)))),
+  file('/tmp/XqAKAr29t2/SOT_Cqpz2y',unknown)).
+fof(f91,plain,(
+  ~spl0_1 | ~spl0_4),
+  inference(avatar_split_clause,[],[f54,f80,f66])).
+fof(f54,plain,(
+  ~color(v2,r) | ~color(v4,r)),
+  inference(resolution,[],[f36,f41])).
+fof(f90,plain,(
+  ~spl0_2 | ~spl0_4),
+  inference(avatar_split_clause,[],[f55,f80,f70])).
+fof(f55,plain,(
+  ~color(v2,r) | ~color(v1,r)),
+  inference(resolution,[],[f36,f42])).
+fof(f89,plain,(
+  ~spl0_1 | ~spl0_3),
+  inference(avatar_split_clause,[],[f56,f75,f66])).
+fof(f56,plain,(
+  ~color(v3,r) | ~color(v4,r)),
+  inference(resolution,[],[f36,f26])).
+fof(f87,plain,(
+  ~spl0_2 | ~spl0_3),
+  inference(avatar_split_clause,[],[f58,f75,f70])).
+fof(f58,plain,(
+  ~color(v3,r) | ~color(v1,r)),
+  inference(resolution,[],[f36,f43])).
+fof(f84,plain,(
+  ~spl0_2 | ~spl0_1),
+  inference(avatar_split_clause,[],[f61,f66,f70])).
+fof(f61,plain,(
+  ~color(v4,r) | ~color(v1,r)),
+  inference(resolution,[],[f36,f44])).
+% SZS output end Proof for SOT_Cqpz2y
+% (3200744)------------------------------
+% (3200744)Version: Vampire 5.0.0 (Release build, commit 3ce9b74f2 on 2025-07-14 12:22:21 +0200)
+% (3200744)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 z3-4.8.4-9178-g3c47fd96c
+% (3200744)Termination reason: Refutation
+
+% (3200744)Time elapsed: 0.003 s
+% (3200744)Peak memory usage: 11 MB
+% (3200744)------------------------------
+% (3200744)------------------------------
+% (3200739)Success in time 0.063 s
+% Vampire exiting
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_Cqpz2y - Vampire---5.0 says Unsatisfiable - CPU = 0.00 WC = 0.09 
+% OUTPUT: SOT_Cqpz2y - Vampire---5.0 says Refutation - CPU = 0.00 WC = 0.10 
