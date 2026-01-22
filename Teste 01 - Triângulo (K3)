@@ -1,0 +1,132 @@
+% Checking upload ... % Checker ran ... % No errors ...
+% START OF SYSTEM OUTPUT
+Running first-order theorem proving
+Running: /home/tptp/Systems/Vampire---5.0/vampire --mode casc -m 16384 --cores 7 -t 60 /tmp/fhOyNDqgrg/SOT_t3StPt
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197505)lrs+35_1024_to=lpo:sil=64000:random_seed=3650151532:i=235:fsr=off:amm=off_2 on SOT_t3StPt for (2ds/235Mi)
+% (3197501)fmb+10_1_sas=cadical:random_seed=3114388158:i=150016_599 on SOT_t3StPt for (599ds/150016Mi)
+% (3197500)lrs+1_1024_to=lpo:sp=weighted_frequency:abs=on:random_seed=3198224323:amm=off_599 on SOT_t3StPt for (599ds/0Mi)
+% (3197504)dis+10_1_sil=2000:abs=on:bsr=unit_only:sac=on:avsqc=5:random_seed=1885821593:avsq=on:i=109:aac=none:nicw=on_1 on SOT_t3StPt for (1ds/109Mi)
+% (3197502)ott+11_2:1_plsq=on:prc=on:plsqc=2:plsqr=16065853,524288:spb=goal:lsd=10:bsr=on:sac=on:random_seed=3156903504:s2a=on:prac=on:i=250008:s2at=2:add=on:doe=on:bs=unit_only:bd=all:nm=4:aer=on:uhcvi=off:gsp=on:rawr=on_599 on SOT_t3StPt for (599ds/250008Mi)
+% (3197506)fmb+10_1_sil=16000:sas=cadical:random_seed=3665208696:i=102_1 on SOT_t3StPt for (1ds/102Mi)
+% Detected minimum model sizes of [1]
+% Detected maximum model sizes of [6]
+% TRYING [1]
+% TRYING [2]
+% Detected minimum model sizes of [1]
+% Detected maximum model sizes of [6]
+% TRYING [1]
+% TRYING [3]
+% (3197503)ott+21_1_sil=128000:fs=off:lcm=predicate:random_seed=3093293442:i=102:av=off:fsr=off_1 on SOT_t3StPt for (1ds/102Mi)
+% (3197500)Also succeeded, but the first one will report.
+% (3197505)First to succeed.
+% Finite Model Found!
+% (3197504)Also succeeded, but the first one will report.
+% SZS status Satisfiable for SOT_t3StPt
+% TRYING [2]
+% (3197501)Also succeeded, but the first one will report.
+% (3197505)Solution written to "/tmp/tmp.HUEguUtHhZ/vampire-proof-3197495"
+% TRYING [3]
+% Finite Model Found!
+% SZS status Satisfiable for SOT_t3StPt
+% (3197506)Also succeeded, but the first one will report.
+% (3197502)Also succeeded, but the first one will report.
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% (3197495)Running in auto input_syntax mode. Trying TPTP
+% SZS status Satisfiable for SOT_t3StPt
+% SZS output start Saturation.
+cnf(u48,axiom,
+    ~color(v2,r)).
+
+cnf(u52,axiom,
+    ~color(v3,r)).
+
+cnf(u56,axiom,
+    color(v1,r)).
+
+cnf(u72,axiom,
+    ~color(v2,g)).
+
+cnf(u75,axiom,
+    color(v3,g)).
+
+cnf(u81,axiom,
+    ~color(v1,g)).
+
+cnf(u95,axiom,
+    color(v2,b)).
+
+cnf(u100,axiom,
+    ~color(v3,b)).
+
+cnf(u105,axiom,
+    ~color(v1,b)).
+
+cnf(u30,axiom,
+    ~edge(X0,X1) | ~color(X0,r) | ~color(X1,r)).
+
+cnf(u33,axiom,
+    edge(v2,v1)).
+
+cnf(u23,axiom,
+    edge(v2,v3)).
+
+cnf(u35,axiom,
+    edge(v1,v3)).
+
+cnf(u24,axiom,
+    edge(v3,v1)).
+
+cnf(u26,axiom,
+    color(X0,b) | color(X0,g) | color(X0,r)).
+
+cnf(u29,axiom,
+    ~color(X0,g) | ~color(X0,b)).
+
+cnf(u31,axiom,
+    ~edge(X0,X1) | ~color(X0,g) | ~color(X1,g)).
+
+cnf(u32,axiom,
+    ~edge(X0,X1) | ~color(X0,b) | ~color(X1,b)).
+
+cnf(u25,axiom,
+    ~edge(X0,X1) | edge(X1,X0)).
+
+cnf(u22,axiom,
+    edge(v1,v2)).
+
+cnf(u34,axiom,
+    edge(v3,v2)).
+
+cnf(u27,axiom,
+    ~color(X0,r) | ~color(X0,g)).
+
+cnf(u28,axiom,
+    ~color(X0,r) | ~color(X0,b)).
+
+% SZS output end Saturation.
+% SZS output start Definitions and Model Updates.
+% SZS output end Definitions and Model Updates.
+% (3197505)------------------------------
+% (3197505)Version: Vampire 5.0.0 (Release build, commit 3ce9b74f2 on 2025-07-14 12:22:21 +0200)
+% (3197505)Linked with Z3 4.14.0.0 3c47fd96cf5645d0c42b2c819d9e9a84380aa721 z3-4.8.4-9178-g3c47fd96c
+% (3197505)Termination reason: Satisfiable
+
+% (3197505)Time elapsed: 0.002 s
+% (3197505)Peak memory usage: 11 MB
+% (3197505)------------------------------
+% (3197505)------------------------------
+% (3197495)Success in time 0.065 s
+% Vampire exiting
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_t3StPt - Vampire---5.0 says Satisfiable - CPU = 0.01 WC = 0.10 
+% OUTPUT: SOT_t3StPt - Vampire---5.0 says Saturation - CPU = 0.01 WC = 0.10 
